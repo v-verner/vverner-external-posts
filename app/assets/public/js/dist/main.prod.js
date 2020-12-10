@@ -1,0 +1,1 @@
+"use strict";var $sliders=document.querySelectorAll(".vvep__slider");$sliders&&$sliders.forEach(function(e){new Flickity(e,{cellAlign:"left",contain:!0,wrapAround:!0,autoPlay:!0,imagesLoaded:!0,adaptiveHeight:!1})});

@@ -6,8 +6,8 @@ function vvep_registerExternalPostsAdminAssets(): void
     $base = plugin_dir_url(VVEP_FILE) . '/app/assets/admin';
     $ver  = $_SERVER['REMOTE_ADDR'] === '::1' ? uniqid() : VVEP_VERSION;
 
-    wp_enqueue_style('vvep-main', $base . '/css/admin.css', [], $ver);
-    wp_enqueue_script('vvep-main', $base . '/js/admin.js', ['jquery'], $ver, true);
+    wp_enqueue_style('vvep-main', $base . '/css/dist/admin.min.css', [], $ver);
+    wp_enqueue_script('vvep-main', $base . '/js/dist/admin.prod.js', ['jquery'], $ver, true);
     wp_localize_script('vvep-main', 'vvepData', [
         'ajaxUrl' => admin_url('admin-ajax.php')
     ]);

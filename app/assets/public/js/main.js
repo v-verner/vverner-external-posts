@@ -1,5 +1,5 @@
 const $sliders = document.querySelectorAll('.vvep__slider');
-
+ 
 if($sliders) {
     $sliders.forEach(el => {
         new Flickity(el, {

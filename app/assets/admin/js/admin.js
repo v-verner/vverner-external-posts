@@ -3,7 +3,7 @@
     const $stepInput        = document.querySelector('#vvep-setting-wizard input[name="step"]');
     const $reloadPostTypes  = document.querySelector('#vvep-reloadPostTypes');
     const $cleanCache       = document.querySelector('#clearExternalPostsCache');
-
+ 
     if ($wizard) {
         $wizard.addEventListener('submit', evt => {
             evt.preventDefault();
