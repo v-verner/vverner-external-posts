@@ -52,7 +52,7 @@ class ExternalPosts
         $endpoint  .= ($per_page)   ? '?per_page=' . $per_page : '';
         $endpoint  .= ($search)     ? '&search='   . $search   : '';
 
-        $test       = wp_remote_get($domain . $endpoint, $this->getHeaders());
+        $test       = wp_remote_get($domain . $endpoint);
 
         if(!$this->isAvailable($test)) return null;
 
