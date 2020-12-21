@@ -10,7 +10,7 @@ function displayExternalPostsGrid($atts)
     if(!$a['id']) return '<p>VVEP: Por favor, informe o ID do shortcode para exibir</p>';
 
     $sc     = new ExternalPostsShortcode((int) $a['id']); // usado na view
-    $vvep   = new ExternalPosts();
+    $vvep   = new ExternalPostsApi($sc->__get('domain'), $sc->__get('type'), $sc->__get('updatePeriod'));
     $posts  = $vvep->getPosts($sc->__get('per_page'), $sc->__get('search')); // usado na view
 
     ob_start();

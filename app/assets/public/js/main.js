@@ -10,6 +10,6 @@ if($sliders) {
             imagesLoaded: true,
             adaptiveHeight: false
         });
-    });
+    }); 
 
 }

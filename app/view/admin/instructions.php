@@ -27,6 +27,5 @@
     <br>
 
     <h2>Ações</h2>
-    <a href="<?= getExternalPostsAdminPageUrl('Settings') ?>" class="button button-primary">Ir para as configurações.</a>
     <button id="clearExternalPostsCache" class="button button-secondary">Limpar cache dos posts</button>
 </div>

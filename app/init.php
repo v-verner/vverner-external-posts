@@ -4,7 +4,7 @@
  * Bootstrap file
  */
 
- require_once VVEP_PATH . '/app/controller/classes/ExternalPosts.php';
+ require_once VVEP_PATH . '/app/controller/classes/ExternalPostsApi.php';
  require_once VVEP_PATH . '/app/controller/classes/ExternalPostsShortcode.php';
 
  require_once VVEP_PATH . '/app/controller/admin/ajax.php';

@@ -1,34 +1,14 @@
-.vvep-wizard .vvep-wizard__step:not(.active),
-.vvep-wizard .vvep-wizard__wait:not(.active),
-.vvep-wizard .vvep-wizard__submit:not(.active) {
+.after-domain {
   display: none;
 }
-.vvep-wizard .vvep-wizard__step {
-  padding: 10px 0;
-}
-.vvep-wizard .vvep-wizard__step .input-container {
-  margin-bottom: 15px;
-}
-.vvep-wizard .vvep-wizard__step .input-container:last-child {
-  margin-bottom: 0;
-}
-.vvep-wizard .vvep-wizard__step .input-container label {
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.vvep-wizard .vvep-wizard__step .input-container label #vvep-reloadPosts {
+
+#vvep-reloadPosts {
   color: #8214ff;
   transition: all 0.3s ease;
 }
-.vvep-wizard .vvep-wizard__step .input-container label #vvep-reloadPosts:hover {
+#vvep-reloadPosts:hover {
   filter: brightness(1.2);
   transform: scale(1.1);
-}
-.vvep-wizard .vvep-wizard__step .input-container input, .vvep-wizard .vvep-wizard__step .input-container select {
-  display: block;
-  min-width: 250px;
-  max-width: 100%;
 }
 
 .lds-ellipsis {
