@@ -13,23 +13,9 @@ class ExternalPostsApi
       $this->updatePeriod  = $updatePeriod;
    }
 
-   public function __get(string $prop)
-   {
-      $optName = isset(self::OPTIONS[$prop]) ? self::OPTIONS[$prop] : null;
-      if (!$optName) return null;
-
-      $opt = get_option($optName, false);
-      return is_numeric($opt) ? (int) $opt : $opt;
-   }
-
-   public function __set(string $prop, $value)
-   {
-      $oldValue = $this->__get($prop);
-      $oldValue ? update_option(self::OPTIONS[$prop], $value) : add_option(self::OPTIONS[$prop], $value);
-   }
-
    public static function getPostTypes(string $domain = null)
    {
+      $domain     = self::formatDomain($domain);
       $endpoint   = 'wp-json/wp/v2/types';
 
       $test       = wp_remote_get($domain . $endpoint);
@@ -109,7 +95,7 @@ class ExternalPostsApi
       return $cacheName;
    }
 
-   private function formatDomain(string $domain): string
+   private static function formatDomain(string $domain): string
    {
       $domain   = (substr($domain, -1) === '/') ? $domain : $domain . '/';
       return $domain;
