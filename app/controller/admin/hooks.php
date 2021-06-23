@@ -8,7 +8,7 @@ function vvep_checkExternalDomain(array $res, array $userData): array
 
    if (!$terms) :
       $res['is_valid'] = false;
-      $res['message']  = 'Não foi possível realizar a conexão com o domínio solicitado. Certifique-se de que ele é um site feito em WordPress e que o acesso aos endpoins da API de posts está ativa.';
+      $res['message']  = 'Não foi possível realizar a conexão com o domínio solicitado. Certifique-se de que ele é um site feito em WordPress e que o acesso aos endpoints da API de posts está ativa.';
 
    else :
       $options = [];
