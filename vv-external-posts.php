@@ -10,4 +10,4 @@
 define('VVEP_FILE', __FILE__);
 define('VVEP_PATH', __DIR__);
 define('VVEP_VERSION', '1.0.0');
-require_once VVEP_PATH . '/app/init.php';
+require_once VVEP_PATH . '/app/init.php'; 
